@@ -20,5 +20,12 @@ public class userRegistrationImpl implements userRegistration
 		Matcher matched = pattern.matcher(lastName);
 		return matched.matches();
 	}
-
+	@Override
+	public boolean emailinfo(String email) 
+	{
+		String emailinfo = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+		Pattern pattern = Pattern.compile(emailinfo);
+		Matcher matched = pattern.matcher(email);
+		return matched.matches();
+	}
 }
