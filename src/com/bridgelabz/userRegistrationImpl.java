@@ -38,7 +38,7 @@ public class userRegistrationImpl implements userRegistration
 	}
 	@Override
 	public boolean passwordinfo(String password) {
-		String passwordinfo = "(?=.*?[A-Z])(?=.*?[0-9]).{8,}";
+		String passwordinfo = "^(?=.{8,20})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$";
 		Pattern pattern = Pattern.compile(passwordinfo);
 		Matcher matched = pattern.matcher(password);
 		return matched.matches();
