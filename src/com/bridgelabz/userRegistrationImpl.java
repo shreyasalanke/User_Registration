@@ -36,5 +36,12 @@ public class userRegistrationImpl implements userRegistration
 		Matcher matched = pattern.matcher(phoneNumber);
 		return matched.matches();
 	}
+	@Override
+	public boolean passwordinfo(String password) {
+		String passwordinfo = "^(?=.{8,20})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$";
+		Pattern pattern = Pattern.compile(passwordinfo);
+		Matcher matched = pattern.matcher(password);
+		return matched.matches();
+	}
 
 }

@@ -16,5 +16,7 @@ public class userRegistrationMain
 		System.out.println(userRegistrationService.emailinfo(scanner.next()));
 		System.out.println("Enter The Phone Number :");
 		System.out.println(userRegistrationService.phoneNumberinfo(scanner.next()));
+		System.out.println("Enter The Password :");
+		System.out.println(userRegistrationService.passwordinfo(scanner.next()));
 	}
 }
