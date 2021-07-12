@@ -28,4 +28,13 @@ public class userRegistrationImpl implements userRegistration
 		Matcher matched = pattern.matcher(email);
 		return matched.matches();
 	}
+	@Override
+	public boolean phoneNumberinfo(String phoneNumber) 
+	{
+		String phoneNumberinfo = "^(91){1}[0-9]{9}$";
+		Pattern pattern = Pattern.compile(phoneNumberinfo);
+		Matcher matched = pattern.matcher(phoneNumber);
+		return matched.matches();
+	}
+
 }

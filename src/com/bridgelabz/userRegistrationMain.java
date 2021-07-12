@@ -12,7 +12,9 @@ public class userRegistrationMain
 		System.out.println(userRegistrationService.firstNameinfo(scanner.next()));
 		System.out.println("Enter The Last Name :");
 		System.out.println(userRegistrationService.lastNameinfo(scanner.next()));
-		System.out.println("Enter The Last Name :");
+		System.out.println("Enter The Emailid :");
 		System.out.println(userRegistrationService.emailinfo(scanner.next()));
+		System.out.println("Enter The Phone Number :");
+		System.out.println(userRegistrationService.phoneNumberinfo(scanner.next()));
 	}
 }
